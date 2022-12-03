@@ -21,7 +21,10 @@ Para começar, é necessário fazer uma raspagem dos dados no site do Tesouro Tr
 
 A aquisição dos dados vem do Tesouro Transparente: https://www.tesourotransparente.gov.br/ckan/dataset/transferencias-obrigatorias-da-uniao
 
-## 4. Perpectivas Futuras
+## 4. Resultado Final
+![alt text](https://github.com/CaioMendes92/Acompanhamento-Mensal-das-Transfer-ncias-Obrigat-rias-da-Uni-o-utilizando-BS4-Airflow/blob/main/imgs/resultado_final.png?raw=true)
+
+## 5. Perpectivas Futuras
 * Aprimorar os dados de forma a selecionar todos os estados (caso seja necessário);
 * Definir períodos anteriores;
 * Cruzar informações com outras fontes para obter resultados diferentes.
