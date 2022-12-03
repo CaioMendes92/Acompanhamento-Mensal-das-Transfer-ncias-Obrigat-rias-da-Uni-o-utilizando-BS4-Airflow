@@ -24,6 +24,10 @@ A aquisição dos dados vem do Tesouro Transparente: https://www.tesourotranspar
 ## 4. Resultado Final
 ![alt text](https://github.com/CaioMendes92/Acompanhamento-Mensal-das-Transfer-ncias-Obrigat-rias-da-Uni-o-utilizando-BS4-Airflow/blob/main/imgs/resultado_final.png?raw=true)
 
+Para uma atualização recorrente, foi utilizado o Apache Airflow com uma atualização todos os dia 2 de cada mês às 11am. A quesito de teste, foi considerado que a primeira data foi 02/08/2022, de forma que é criado uma página por mês com os dados mais atuais. A imagem abaixo exibe que as atualizações foram realizadas com sucesso.
+
+![alt text](https://github.com/CaioMendes92/Acompanhamento-Mensal-das-Transfer-ncias-Obrigat-rias-da-Uni-o-utilizando-BS4-Airflow/blob/main/imgs/tela_airflow.jpeg?raw=true)
+
 ## 5. Perpectivas Futuras
 * Aprimorar os dados de forma a selecionar todos os estados (caso seja necessário);
 * Definir períodos anteriores;
