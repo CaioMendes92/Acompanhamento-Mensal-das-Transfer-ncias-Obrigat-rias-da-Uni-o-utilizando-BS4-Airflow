@@ -1,0 +1,54 @@
+[2022-12-02 18:42:56,408] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: meu_primeiro_dag.cria_pasta scheduled__2022-12-01T00:00:00+00:00 [queued]>
+[2022-12-02 18:42:56,420] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: meu_primeiro_dag.cria_pasta scheduled__2022-12-01T00:00:00+00:00 [queued]>
+[2022-12-02 18:42:56,420] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-02 18:42:56,420] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-02 18:42:56,420] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-02 18:42:56,455] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): cria_pasta> on 2022-12-01 00:00:00+00:00
+[2022-12-02 18:42:56,458] {standard_task_runner.py:52} INFO - Started process 28114 to run task
+[2022-12-02 18:42:56,470] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'meu_primeiro_dag', 'cria_pasta', 'scheduled__2022-12-01T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/meu_primeiro_dag.py', '--cfg-path', '/tmp/tmpecbdydel', '--error-file', '/tmp/tmpdn8sntuf']
+[2022-12-02 18:42:56,471] {standard_task_runner.py:80} INFO - Job 3: Subtask cria_pasta
+[2022-12-02 18:42:56,531] {task_command.py:370} INFO - Running <TaskInstance: meu_primeiro_dag.cria_pasta scheduled__2022-12-01T00:00:00+00:00 [running]> on host caiomendes-virtual-machine
+[2022-12-02 18:42:56,621] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=meu_primeiro_dag
+AIRFLOW_CTX_TASK_ID=cria_pasta
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-01T00:00:00+00:00
+[2022-12-02 18:42:56,622] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-02 18:42:56,623] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'mkdir -p "/home/caiomendes/Documents/AIRFLOW/pasta" ']
+[2022-12-02 18:42:56,632] {subprocess.py:85} INFO - Output:
+[2022-12-02 18:42:56,668] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-12-02 18:42:56,694] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=meu_primeiro_dag, task_id=cria_pasta, execution_date=20221201T000000, start_date=20221202T214256, end_date=20221202T214256
+[2022-12-02 18:42:56,723] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-02 18:42:56,773] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-02 18:55:12,043] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: meu_primeiro_dag.cria_pasta scheduled__2022-12-01T00:00:00+00:00 [queued]>
+[2022-12-02 18:55:12,055] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: meu_primeiro_dag.cria_pasta scheduled__2022-12-01T00:00:00+00:00 [queued]>
+[2022-12-02 18:55:12,055] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-02 18:55:12,055] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-02 18:55:12,055] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-02 18:55:12,071] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): cria_pasta> on 2022-12-01 00:00:00+00:00
+[2022-12-02 18:55:12,075] {standard_task_runner.py:52} INFO - Started process 31937 to run task
+[2022-12-02 18:55:12,082] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'meu_primeiro_dag', 'cria_pasta', 'scheduled__2022-12-01T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/meu_primeiro_dag.py', '--cfg-path', '/tmp/tmppoxzmoty', '--error-file', '/tmp/tmpiuz4x2ja']
+[2022-12-02 18:55:12,083] {standard_task_runner.py:80} INFO - Job 7: Subtask cria_pasta
+[2022-12-02 18:55:12,364] {task_command.py:370} INFO - Running <TaskInstance: meu_primeiro_dag.cria_pasta scheduled__2022-12-01T00:00:00+00:00 [running]> on host caiomendes-virtual-machine
+[2022-12-02 18:55:12,572] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=meu_primeiro_dag
+AIRFLOW_CTX_TASK_ID=cria_pasta
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-01T00:00:00+00:00
+[2022-12-02 18:55:12,579] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-02 18:55:12,587] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'mkdir -p "/home/caiomendes/Documents/airflow/pasta=2022-12-02T00:00:00+00:00" ']
+[2022-12-02 18:55:12,628] {subprocess.py:85} INFO - Output:
+[2022-12-02 18:55:12,647] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-12-02 18:55:12,722] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=meu_primeiro_dag, task_id=cria_pasta, execution_date=20221201T000000, start_date=20221202T215512, end_date=20221202T215512
+[2022-12-02 18:55:12,791] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-02 18:55:12,828] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
