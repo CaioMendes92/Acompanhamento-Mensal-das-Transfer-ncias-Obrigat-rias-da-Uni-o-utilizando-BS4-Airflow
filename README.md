@@ -3,7 +3,7 @@
 ![alt text](https://github.com/CaioMendes92/Acompanhamento-Mensal-das-Transfer-ncias-Obrigat-rias-da-Uni-o-utilizando-BS4-Airflow/blob/main/imgs/airflow%2Btesouro_nacional.png?raw=true)
 
 ## 1. Problema de Negócio
-Uma empresa de Alagoas precisa investigar o quanto foi enviado por mês de transferências obrigatórias para a união. Pensando nisso pediu que sua equipe de dados criasse uma solução que captasse e entregasse de uma forma clara o quanto foi enviado do ano de 2017 até 2022 e que seja atualizado mensalmente.
+É necessário captar e entregar de uma forma clara as transferências obrigatórias realizadas para a união no estado de Alagoas no período de 2017 até 2022. Como bônus, é importante que seja atualizado mensalmente.
 
 ## 2. Premissas do Negócio
 * Selecionou-se apenas o estado de Alagoas;
@@ -28,7 +28,14 @@ Para uma atualização recorrente, foi utilizado o Apache Airflow com uma atuali
 
 ![alt text](https://github.com/CaioMendes92/Acompanhamento-Mensal-das-Transfer-ncias-Obrigat-rias-da-Uni-o-utilizando-BS4-Airflow/blob/main/imgs/tela_airflow.jpeg?raw=true)
 
+A documentação com maiores explicações de cada função utilizada para o resultado pode ser encontrada [aqui](https://caiomendes92.atlassian.net/wiki/spaces/CAIO/pages/163841/Documenta+o+do+projeto+Acompanhamento+Mensal+das+Transfer+ncias+Obrigat+rias+da+Uni+o+Utilizando+BS4+Airflow). Vale salientar que é necessário um cadastro para acessar o site do Confluence e ler a documentação, entretanto, é possível baixar o PDF [aqui](https://drive.google.com/file/d/143SLUqG6PXJoAzZdoZGQz2Aalsz25j-1/view?usp=share_link). Para uma melhor experiência, é aconselhado realizar o cadastro.
+
 ## 5. Perpectivas Futuras
-* Aprimorar os dados de forma a selecionar todos os estados (caso seja necessário);
-* Definir períodos anteriores;
-* Cruzar informações com outras fontes para obter resultados diferentes.
+* Refinar as funções, sobretudo a de tratamento. Com mais tempo, possivelmente testaria se a primeira função melt é realmente necessária.
+* Melhoria nos nomes dos DataFrames, estão muito genéricos.
+* Melhoria na forma de organizar o código
+* Melhor adaptação para o Airflow.
+* Entender se a criação de pastas é a melhor solução, uma vez que os dados podem ser sobrepostos e diminuiria o espaço utilizado em um banco de dados.
+* Melhor explicação das funções e de uma forma mais concisa na documentação.
+* Conectar os dados ao Power BI e criar um Dashboard com a evolução das transferências ao longo dos meses.
+* Cruzar outras informações públicas para criar insights.
